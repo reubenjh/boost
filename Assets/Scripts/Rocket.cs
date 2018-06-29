@@ -5,7 +5,7 @@ public class Rocket : MonoBehaviour
 { 
     [SerializeField] float rcsThrust = 100f;
     [SerializeField] float mainThrust = 100f;
-    [SerializeField] float loadTime = 1f;
+    [SerializeField] float loadTime = 2f;
 
     [SerializeField] AudioClip mainEngine;
     [SerializeField] AudioClip crashSound;
@@ -23,17 +23,14 @@ public class Rocket : MonoBehaviour
     State state = State.Alive;
 
 
+    /// ////////////////////////////////
 
-
-
-
-    // Use this for initialization
+ 
     void Start () {
         rigidBody = GetComponent<Rigidbody>();
         audioSource = GetComponent<AudioSource>();
 	}
 	
-	// Update is called once per frame
 	void Update () {
         // somewhere stop sound on death
         if (state == State.Alive)
@@ -42,6 +39,8 @@ public class Rocket : MonoBehaviour
             RespondToRotateInput();
         }
     }
+
+    /// ////////////////////////////////
 
     void OnCollisionEnter(Collision collision)
     {
@@ -71,8 +70,6 @@ public class Rocket : MonoBehaviour
         int sceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(sceneIndex);
     }
-
-
 
     private void RespondToThrustInput()
     {

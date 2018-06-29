@@ -588,11 +588,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49aeae309cc37334f9a55ae21389cedf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rcsThrust: 250
-  mainThrust: 30000
+  rcsThrust: 300
+  mainThrust: 50000
   loadTime: 1
   mainEngine: {fileID: 8300000, guid: 2b5a936056249d24dbbaab9f45b0089a, type: 3}
-  crashSound: {fileID: 8300000, guid: a198809a2684361449c21a42e7c00c0c, type: 3}
+  crashSound: {fileID: 8300000, guid: 6a9c22b6e728abe42b37b5bf03ef2cef, type: 3}
   winSound: {fileID: 8300000, guid: 5ad8237dd37dc654188959ec06a3105d, type: 3}
   mainEngineParticles: {fileID: 198661911400178402}
   successParticles: {fileID: 198337912697121190}
