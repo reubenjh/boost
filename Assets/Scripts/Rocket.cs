@@ -14,6 +14,7 @@ public class Rocket : MonoBehaviour
     [SerializeField] ParticleSystem mainEngineParticles;
     [SerializeField] ParticleSystem successParticles;
     [SerializeField] ParticleSystem deathParticles;
+    [SerializeField] ParticleSystem winParticles;
 
 
     Rigidbody rigidBody;
@@ -62,7 +63,15 @@ public class Rocket : MonoBehaviour
     private void LoadNextScene()
     {
         int sceneIndex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(sceneIndex + 1); // TODO allow for loading on final level
+        if (sceneIndex != 3)
+        {
+            SceneManager.LoadScene(sceneIndex + 1);
+        }
+        else 
+        {
+            print("You Wiiiiiin!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+            winParticles.Play();
+        } 
     }
 
     private void LoadCurrentScene()
