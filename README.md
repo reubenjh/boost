@@ -1,4 +1,4 @@
-# Rockey boost
+# Rocket boost
 
 A little spaceship game I made to learn a bit of Unity Game Engine and C# for a personal project at Dev Academy while I was studying.
 
