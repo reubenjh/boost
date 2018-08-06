@@ -6,4 +6,6 @@ I had WebGL build issues and couldn't get it running on a server and still haven
 
 wee demo at https://youtu.be/UEk1Mzmd-dA - you can tell I played it a lot.
 
-<a href='https://youtu.be/UEk1Mzmd-dA'><img src='https://s22.postimg.cc/ngojxbmkh/Capture.png'></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=YOUTUBE_VIDEO_ID_HERE
+" target="_blank"><img src="http://img.youtube.com/vi/UEk1Mzmd-dA/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="480" height="360" border="10" /></a>
